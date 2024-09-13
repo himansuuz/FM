@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        table {
+            margin: auto;
+            background-color: rgb(29, 45, 219);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: #adb6be;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <fieldset>
+                <legend>LOGIN FORM</legend>
+                <tr>
+                    <td>USERNAME</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>PASSWORD</td>
+                    <td><input type="password" minlength="5"></td>
+                </tr>
+                <tr>
+                    <td>GENDER</td>
+                    <td>
+                        <select name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DOB</td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="SEND">
+                        <input type="reset" value="CLEAR">
+                    </td>
+                </tr>
+            </fieldset>
+        </table>
+    </form>
+</body>
+</html>
